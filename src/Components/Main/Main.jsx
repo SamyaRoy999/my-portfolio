@@ -1,12 +1,13 @@
-import PropTypes from 'prop-types';
-const Main = ({ children }) => {
+
+import Hero from '../Hero/Hero';
+const Main = () => {
     return (
-        <div>{children}</div>
+        <div>
+            <Hero />
+          
+        </div>
     )
 }
 
 export default Main
 
-Main.propTypes = {
-    children: PropTypes.any
-};

@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 
 import Main from "../Main/Main";
-import Hero from "../Hero/Hero";
+
 
 
 
@@ -68,7 +68,7 @@ export function StickyNavbar() {
   );
 
   return (
-    <div className="-mx-5 max-h-[768px]  bg-gradient-to-br from-gray-700 to-indigo-600  w-[calc(100%+48px)] overflow-scroll">
+    <div className="-mx-5 max-h-[768px]  bg-gradient-to-br from-[#0F0715] to-[#211138]  w-[calc(100%+48px)] overflow-scroll">
       <Navbar className="sticky top-0 z-50 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
@@ -148,11 +148,8 @@ export function StickyNavbar() {
         </MobileNav>
       </Navbar>
       <div className="mx-auto  max-w-screen-lg py-12">
-        <Main>
-          <Hero/>
-          <Hero/>
-          <Hero/>
-        </Main>
+        <Main/>
+        
       </div>
     </div>
   );

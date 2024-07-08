@@ -33,7 +33,7 @@ const PortfolioCard = ({ ditaels }) => {
             </div>
 
             {isModalOpen && (
-                <div className="fixed inset-0 z-50 overflow-auto text-gray-500   bg-smoke-light flex">
+                <div className="fixed inset-0 z-50 overflow-auto text-gray-400   bg-smoke-light flex">
                     <div className="relative p-8  bg-[#140C1C] w-full max-w-3xl m-auto flex-col flex rounded-lg">
                         <img src={modulData.image} alt={modulData.projectName} className="w-full font-poppins h-64 object-cover rounded-md mb-4"/>
                         <h3 className="font-bold text-lg mb-2">{modulData.projectName}</h3>
@@ -55,9 +55,9 @@ const PortfolioCard = ({ ditaels }) => {
                             </ul>
                         </div>
                         <div>
-                        <h4 className="font-semibold">liveLink: <a href={liveLink} className="hover:text-[#211138]" target="_blank">{liveLink}</a></h4>
-                        <h4 className="font-semibold">github client Link: <a href={githubLinks.client} className="hover:text-[#211138]" target="_blank">{githubLinks.client}</a></h4>
-                        <h4 className="font-semibold">github server Link: <a href={githubLinks.server} className="hover:text-[#211138]" target="_blank">{githubLinks.server}</a></h4>
+                        <h4 className="font-semibold">liveLink : <a href={liveLink} className="hover:text-[#211138] text-[#3e107d]" target="_blank">{liveLink}</a></h4>
+                        <h4 className="font-semibold">github client Link : <a href={githubLinks.client} className="hover:text-[#211138] text-[#3e107d]" target="_blank">{githubLinks.client}</a></h4>
+                        <h4 className="font-semibold">github server Link : <a href={githubLinks.server} className="hover:text-[#211138] text-[#3e107d]" target="_blank">{githubLinks.server}</a></h4>
                         </div>
                         <div className="flex justify-end mt-4">
                             <button className="btn bg-[#9463F7] text-white py-2 px-4 rounded" onClick={closeModal}>Close</button>

@@ -1,4 +1,5 @@
 
+import Contact from '../Contact/Contact';
 import Hero from '../Hero/Hero';
 import { StickyNavbar } from '../Navbar/Navbar';
 
@@ -9,8 +10,7 @@ const Main = () => {
             <StickyNavbar />
             <Hero />
             <ProjsctSection />
-            {/* <Hero /> */}
-            
+            <Contact/>
         </div>
     )
 }

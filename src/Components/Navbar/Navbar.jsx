@@ -7,7 +7,7 @@ import {
   IconButton
 } from "@material-tailwind/react";
 
-import Main from "../Main/Main";
+// import Main from "../Main/Main";
 
 
 
@@ -68,15 +68,18 @@ export function StickyNavbar() {
   );
 
   return (
-    <div className="-mx-5 max-h-[768px]  bg-gradient-to-br from-[#0F0715] to-[#211138]  w-[calc(100%+48px)] overflow-scroll">
-      <Navbar className="sticky top-0 z-50 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+    <div className="-mx-5 max-h-[768px]  w-[100%]">
+      <Navbar className="fixed top-0 z-50 h-max w-[100%] border-0 right-0 bg-[#100817] bg-opacity-60 rounded-none px-4 py-1 lg:px-8 ">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
+            className="mr-4 cursor-pointer py-1.5 font-bold flex items-center gap-2 font-poppins text-2xl text-white"
           >
-            Material Tailwind
+            <div className="w-14 h-14 flex items-center border rounded-full bg-white">
+              <img src="https://i.ibb.co/cDmJV3b/S-Coding-Sentinel-Logo-removebg-preview.png" alt="" />
+            </div>
+            Samya <samp className="text-[#9362F7] -ml-2 font-bold text-2xl">roy</samp>
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
@@ -98,7 +101,7 @@ export function StickyNavbar() {
             </div>
             <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-6 w-6 text-inherit  hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
@@ -147,10 +150,6 @@ export function StickyNavbar() {
           </div>
         </MobileNav>
       </Navbar>
-      <div className="mx-auto  max-w-screen-lg py-12">
-        <Main/>
-        
-      </div>
     </div>
   );
 }

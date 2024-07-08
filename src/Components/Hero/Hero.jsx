@@ -5,7 +5,7 @@ import resume from "../../../public/rme.pdf"
 
 const Hero = () => {
     return (
-        <main className=" max-w-screen-xl mx-auto relative overflow-hidden h-screen pt-20">
+        <main className=" max-w-screen-xl mx-auto relative overflow-hidden  pt-20">
             <div className="  flex relative z-20 items-center overflow-hidden">
                 <div className="container mx-auto px-6 flex   relative py-16">
                     <div className="sm:w-2/3 lg:w-3/5 flex flex-col relative z-20">
@@ -34,7 +34,7 @@ const Hero = () => {
                         <div className="mt-5 w-[180px]">
                             <a className="px-6 py-2 flex items-center gap-3  min-w-[130px] text-center text-gray-50 hover:text-[#9463F7] border border-[#9463F7] rounded hover:bg-violet-600  active:bg-indigo-500 focus:outline-none focus:ring"
                                 href={resume} download={resume}>
-                                Download CV <MdOutlineFileDownload className='text-xl text-white' />
+                                Download CV <MdOutlineFileDownload className='text-xl  text-white' />
                             </a>
                         </div>
                     </div>

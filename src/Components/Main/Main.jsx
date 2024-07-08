@@ -9,7 +9,8 @@ const Main = () => {
             <StickyNavbar />
             <Hero />
             <ProjsctSection />
-            <Hero />
+            {/* <Hero /> */}
+            
         </div>
     )
 }

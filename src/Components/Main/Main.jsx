@@ -1,5 +1,6 @@
 
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 import Hero from '../Hero/Hero';
 import { StickyNavbar } from '../Navbar/Navbar';
 
@@ -11,6 +12,7 @@ const Main = () => {
             <Hero />
             <ProjsctSection />
             <Contact/>
+            <Footer/>
         </div>
     )
 }

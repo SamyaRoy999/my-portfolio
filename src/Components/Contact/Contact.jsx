@@ -61,7 +61,7 @@ const Contact = () => {
                         <h2 className="text-[#905DF7] text-base font-bold">Socials</h2>
 
                         <ul className="flex mt-4 space-x-4">
-                            <li className="bg-transparent border-2 hover:shadow-lg shadow-md shadow-[#9463F7]   border-[#9463F7] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li className="bg-transparent border-2  hover:shadow-lg shadow-md shadow-[#9463F7]    border-[#9463F7] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://www.facebook.com/shamya.roy.77" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#9463F7'
                                         viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ const Contact = () => {
                                     </svg>
                                 </a>
                             </li>
-                            <li className="bg-transparent border-2 hover:shadow-lg shadow-md shadow-[#9463F7]   border-[#9463F7] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li className="bg-transparent border-2 hover:shadow-lg shadow-md shadow-[#9463F7]    border-[#9463F7] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://bd.linkedin.com/" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#9463F7'
                                         viewBox="0 0 511 512">
@@ -81,7 +81,7 @@ const Contact = () => {
                                     </svg>
                                 </a>
                             </li>
-                            <li className="bg-transparent border-2 hover:shadow-lg shadow-md shadow-[#9463F7]   border-[#9463F7] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li className="bg-transparent border-2 shadow-md hover:shadow-lg  shadow-[#9463F7]    border-[#9463F7] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://github.com/SamyaRoy999" target="_blank">
                                     <FaGithub className="text-[#9463F7] text-lg" />
                                 </a>

@@ -1,6 +1,10 @@
 import { FaGithub } from "react-icons/fa";
+
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react'
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
     const form = useRef();
 
@@ -14,7 +18,7 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    toast.success("Your message has been sent successfully!");
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -24,9 +28,10 @@ const Contact = () => {
 
     return (
         <>
-        <div className="w-full text-center mb-16">
+            <div className="w-full text-center mb-16">
                 <h1 className="font-poppins font-bold text-3xl lg:text-5xl mx-auto bg-gradient-to-r from-[#905DF7]  to-gray-50 inline-block text-transparent bg-clip-text">Contact us</h1>
             </div>
+            <ToastContainer />
             <div className="grid sm:grid-cols-2 items-start rounded-lg border  border-white gap-16 p-4 lg:p-10 mx-auto max-w-4xl  font-[sans-serif] bg-gradient-to-br  from-[#211138] to-[#0F0715]">
                 <div>
                     <h1 className=" text-3xl font-extrabold  bg-gradient-to-r from-[#905DF7]  to-gray-50 inline-block text-transparent bg-clip-text">Let&apos;s Talk</h1>
@@ -88,14 +93,14 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className="ml-auto space-y-4">
                     <div className="flex gap-3">
                         <input type='text' placeholder='Name' name="from_name"
-                            className="w-full rounded-md py-3 px-4 bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required/>
+                            className="w-full rounded-md py-3 px-4 bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required />
                         <input type='text' placeholder='Last Name' name="from_name_last"
-                            className="w-full rounded-md py-3 px-4 bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required/>
+                            className="w-full rounded-md py-3 px-4 bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required />
                     </div>
                     <input type='email' placeholder='Email' name="from_email"
-                        className="w-full rounded-md py-3 px-4  bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required/>
+                        className="w-full rounded-md py-3 px-4  bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required />
                     <input type='text' placeholder='Subject' name="subject"
-                        className="w-full rounded-md py-3 px-4  bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required/>
+                        className="w-full rounded-md py-3 px-4  bg-transparent border-2 border-[#9463F7] text-white text-sm outline-blue-500 focus:bg-transparent" required />
                     <textarea placeholder='Message' rows="6" name="message"
                         className="w-full rounded-md px-4  bg-transparent border-2 border-[#9463F7] text-white text-sm pt-3 outline-blue-500 focus:bg-transparent"></textarea>
                     <button type="submit" value="Send"

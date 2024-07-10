@@ -7,15 +7,15 @@ const Hero = () => {
     return (
         <main className=" max-w-screen-xl mx-auto relative overflow-hidden  pt-20">
             <div className="  flex relative z-20 items-center overflow-hidden">
-                <div className="container mx-auto px-6 flex   relative py-16">
+                <div className="container mx-auto px-6 flex relative lg:flex-nowrap flex-wrap-reverse  py-16">
                     <div className="sm:w-2/3 lg:w-3/5 flex flex-col relative z-20">
                         <span className="w-20 h-2  bg-gray-400 mb-12">
                         </span>
                         <h4 className="font-roboto text-2xl font-semibold text-gray-300">  <span className="text-gray-50 p-2 border-2 border-[#905DF7]">Hello</span> , my name is </h4>
-                        <h1 className="font-poppins uppercase text-7xl font-extrabold  py-4 leading-none  text-gray-300  bg-gradient-to-r from-[#905DF7]  to-gray-50 inline-block text-transparent bg-clip-text">
+                        <h1 className="font-poppins uppercase text-5xl lg:text-7xl font-extrabold  py-4 leading-none  text-gray-300  bg-gradient-to-r from-[#905DF7]  to-gray-50 inline-block text-transparent bg-clip-text">
                             Samya Roy
                         </h1>
-                        <h4 className="font-roboto text-3xl font-semibold  mb-2  bg-gradient-to-r from-[#905DF7]  to-white inline-block text-transparent bg-clip-text">I am
+                        <h4 className="font-roboto text-2xl lg:text-3xl font-semibold  mb-2  bg-gradient-to-r from-[#905DF7]  to-white inline-block text-transparent bg-clip-text">I am
                             <Typewriter
                                 words={[' Front End', ' Web developer.']}
                                 loop={10005}
@@ -38,7 +38,7 @@ const Hero = () => {
                             </a>
                         </div>
                     </div>
-                    <div className=" sm:w-1/3 lg:w-3/5 relative">
+                    <div className=" w-full lg:w-3/5 relative  lg:mx-0">
                         <img src="https://i.ibb.co/YhNkgnV/linkdin-Pic2-removebg-10preview.png" className="max-w-xs md:max-w-sm m-auto" />
                     </div>
                 </div>

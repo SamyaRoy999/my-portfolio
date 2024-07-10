@@ -28,11 +28,11 @@ const Contact = () => {
 
     return (
         <>
-            <div className="w-full text-center mb-16">
+            <div id="contact" className="w-full  text-center mb-16">
                 <h1 className="font-poppins font-bold text-3xl lg:text-5xl mx-auto bg-gradient-to-r from-[#905DF7]  to-gray-50 inline-block text-transparent bg-clip-text">Contact us</h1>
             </div>
             <ToastContainer />
-            <div className="grid sm:grid-cols-2 items-start rounded-lg border  border-white gap-16 p-4 lg:p-10 mx-auto max-w-4xl  font-[sans-serif] bg-gradient-to-br  from-[#211138] to-[#0F0715]">
+            <div className="grid grid-cols-1 lg:grid-cols-2  items-start rounded-lg lg:border  border-white gap-16 p-4 lg:p-10 mx-auto max-w-4xl  font-[sans-serif] bg-gradient-to-br  from-[#211138] to-[#0F0715]">
                 <div>
                     <h1 className=" text-3xl font-extrabold  bg-gradient-to-r from-[#905DF7]  to-gray-50 inline-block text-transparent bg-clip-text">Let&apos;s Talk</h1>
                     <p className="text-sm text-gray-500 mt-4">Got a big idea or brand to develop and need assistance? Reach out to us. We&apos;d love to hear about your project and offer our support.</p>

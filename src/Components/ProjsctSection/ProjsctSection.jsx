@@ -6,7 +6,7 @@ import PortfolioCard from "../ProjectCard/ProjectCard"
 
 const ProjsctSection = () => {
     return (
-        <div className=" h-[80vh] mt-24  mb-12">
+        <div id="portfolio" className="  mt-24  mb-12">
             <div className="w-full text-center mb-10">
                 <h1 className="font-poppins font-bold text-3xl lg:text-5xl mx-auto bg-gradient-to-r from-[#905DF7]  to-gray-50 inline-block text-transparent bg-clip-text">My Portfolio</h1>
             </div>

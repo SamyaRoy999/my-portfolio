@@ -3,7 +3,6 @@ import {
   Navbar,
   MobileNav,
   Typography,
-  Button,
   IconButton
 } from "@material-tailwind/react";
 
@@ -27,41 +26,28 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-[#fff] font-normal"
       >
         <a href="#" className="flex items-center">
-          Pages
+          Home
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-[#fff] font-normal"
       >
-        <a href="#" className="flex items-center">
-          Account
+        <a href="#portfolio" className="flex items-center">
+          Portfolio
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 text-[#fff] font-normal"
       >
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Docs
+        <a href="#contact" className="flex items-center">
+          Contact us
         </a>
       </Typography>
     </ul>
@@ -84,20 +70,17 @@ export function StickyNavbar() {
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
             <div className="flex items-center gap-x-1">
-              <Button
-                variant="text"
+
+              <button
                 size="sm"
                 className="hidden lg:inline-block"
               >
-                <span>Log In</span>
-              </Button>
-              <Button
-                variant="gradient"
-                size="sm"
-                className="hidden lg:inline-block"
-              >
-                <span>Sign in</span>
-              </Button>
+                <a href="#contact">
+                  <button size="sm" id='contact3' className="btn  rounded-2xl border-none bg-[#9565F7] text-white hover:btn-outline ">
+                    <span>Say hello</span>
+                  </button>
+                </a>
+              </button>
             </div>
             <IconButton
               variant="text"
@@ -141,12 +124,11 @@ export function StickyNavbar() {
         <MobileNav open={openNav}>
           {navList}
           <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
-            </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
-            </Button>
+            <a href=" #contact">
+              <button size="sm" id='contact3' className="btn  bg-[#9565F7] hover:btn-outline rounded-2xl">
+                <span>Say hello</span>
+              </button>
+            </a>
           </div>
         </MobileNav>
       </Navbar>
